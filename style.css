@@ -19,6 +19,10 @@ p {
   color: rgb(85, 85, 85);
 }
 
+.text-container p {
+  margin-bottom: 1rem;
+}
+
 /* NAVBAR */
 
 nav {
@@ -53,32 +57,16 @@ a:hover {
   color: gray;
 }
 
-/* PROFILE */
+/* SECTIONS */
 
 section {
   padding-top: 3vh;
   height: 93vh;
+  margin: 0 4rem;
 }
 
-#profile {
+.section-container {
   display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-}
-
-.profile-text {
-  align-self: center;
-  text-align: center;
-}
-
-.profile-text p {
-  font-weight: 600;
-}
-
-.profile-text-second-p {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
 }
 
 .section-title {
@@ -86,12 +74,12 @@ section {
   font-size: 3rem;
 }
 
-.profile-pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.section-title,
+.profile-text-first-p {
+  text-align: center;
 }
+
+/* BUTTONS */
 
 .button {
   padding: 1rem;
@@ -127,4 +115,40 @@ section {
   background: rgb(53, 53, 53);
   color: white;
 }
-/* ABOUT */
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.profile-text {
+  align-self: center;
+  text-align: center;
+}
+
+.profile-text p {
+  font-weight: 600;
+}
+
+.profile-text-second-p {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.profile-pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* ABOUT SECTION */
+
+#about-containers {
+  display: flex;
+  margin-bottom: 1rem;
+}
