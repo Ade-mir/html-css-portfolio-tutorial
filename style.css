@@ -126,6 +126,12 @@ section {
   color: white;
 }
 
+#profile-button-container {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -157,6 +163,9 @@ section {
 }
 
 #profile-socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -199,7 +208,11 @@ section {
   bottom: 2.5rem;
 }
 
-/* ExXPERIENCE SECTIION */
+/* EXPERIENCE SECTIION */
+
+#experience {
+  position: relative;
+}
 
 .experience-details-container {
   display: flex;
@@ -208,15 +221,29 @@ section {
   height: 80%;
 }
 
-.experience-container {
+.article-container {
   text-align: initial;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 article {
   display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: 10rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+.experience-sub-title {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: rgb(85, 85, 85);
 }
