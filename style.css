@@ -19,10 +19,6 @@ p {
   color: rgb(85, 85, 85);
 }
 
-.text-container p {
-  margin-bottom: 1rem;
-}
-
 /* NAVBAR */
 
 nav {
@@ -51,22 +47,30 @@ nav {
 a {
   text-decoration: none;
   color: black;
+  text-decoration-color: white;
+  transition: all 300ms ease;
 }
 
 a:hover {
   color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 /* SECTIONS */
 
 section {
-  padding-top: 3vh;
+  padding-top: 4vh;
   height: 93vh;
-  margin: 0 4rem;
+  margin: 0 10rem;
 }
 
 .section-container {
   display: flex;
+  margin-top: 2rem;
+  gap: 4rem;
+  height: 80%;
 }
 
 .section-title {
@@ -83,12 +87,18 @@ section {
 
 .button {
   padding: 1rem;
-  border-radius: 0.5rem;
   font-weight: 600;
+  transition: all 300ms ease;
+}
+
+.button,
+.details-container {
+  border-radius: 0.5rem;
 }
 
 .primary-button,
-.secondary-button {
+.secondary-button,
+.details-container {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
@@ -146,9 +156,67 @@ section {
   margin: auto 0;
 }
 
+#profile-socials-container {
+  margin-top: 1rem;
+}
+
 /* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
 
 #about-containers {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1;
+}
+
+.icon {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+/* ExXPERIENCE SECTIION */
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+.experience-container {
+  text-align: initial;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+article {
+  display: flex;
 }
