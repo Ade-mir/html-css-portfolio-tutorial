@@ -89,11 +89,12 @@ section {
   padding: 1rem;
   font-weight: 600;
   transition: all 300ms ease;
+  width: 8rem;
 }
 
 .button,
 .details-container {
-  border-radius: 0.5rem;
+  border-radius: 2rem;
 }
 
 .primary-button,
@@ -185,6 +186,8 @@ section {
   padding: 1.5rem;
   text-align: center;
   flex: 1;
+  background: rgb(250, 250, 250);
+  border-color: rgb(163, 163, 163);
 }
 
 .icon {
@@ -246,4 +249,49 @@ article .icon {
   font-size: 1.75rem;
   margin-bottom: 2rem;
   color: rgb(85, 85, 85);
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.color-container {
+  background: rgb(250, 250, 250);
+  border-color: rgb(163, 163, 163);
+}
+
+.project-btn {
+  color: black;
+  background: white;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT SECTION */
+
+#contact,
+.contact-info-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact {
+  flex-direction: column;
+}
+
+.contact-info-container {
+  align-items: center;
+  gap: 1rem;
 }
