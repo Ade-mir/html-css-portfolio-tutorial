@@ -2,10 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,40 +11,79 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-p {
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+.experience-sub-title {
   color: rgb(85, 85, 85);
+}
+
+/* FLEXED ELEMENTS */
+
+article,
+nav,
+#contact,
+#profile,
+#profile-socials-container,
+.about-containers,
+.about-details-container,
+.article-container,
+.contact-info-upper-container,
+.contact-info-container,
+.experience-details-container,
+.nav-links,
+.profile-button-container,
+.profile-pic-container,
+.section-container {
+  display: flex;
+}
+
+nav,
+.article-container {
+  justify-content: space-around;
+}
+
+article,
+nav,
+.contact-info-container {
+  align-items: center;
+}
+
+.nav-links,
+.about-containers {
+  gap: 2rem;
+}
+
+#contact,
+#profile,
+#profile-socials-container,
+.about-details-container,
+.experience-details-container,
+.contact-info-upper-container,
+.contact-info-container,
+.profile-button-container {
+  justify-content: center;
+}
+
+#contact,
+.about-details-container,
+.experience-details-container {
+  flex-direction: column;
 }
 
 /* NAVBAR */
 
-nav {
-  height: 17vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: white;
-}
-
-.logo {
-  font-size: 2rem;
-}
-
-.logo:hover {
-  cursor: default;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  font-size: 1.5rem;
+a,
+.project-btn,
+.project-title {
+  color: black;
 }
 
 a {
   text-decoration: none;
-  color: black;
   text-decoration-color: white;
-  transition: all 300ms ease;
 }
 
 a:hover {
@@ -58,7 +93,26 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+nav {
+  height: 17vh;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
 /* SECTIONS */
+
+#about,
+#experience,
+#projects {
+  position: relative;
+}
 
 section {
   padding-top: 4vh;
@@ -67,34 +121,53 @@ section {
 }
 
 .section-container {
-  display: flex;
   margin-top: 2rem;
   gap: 4rem;
+}
+
+.section-container,
+.experience-details-container {
   height: 80%;
 }
 
 .section-title {
-  font-weight: 600;
   font-size: 3rem;
 }
 
-.section-title,
-.profile-text-first-p {
+.button,
+.experience-sub-title,
+.profile-text p,
+.section-title {
+  font-weight: 600;
+}
+
+footer p,
+.details-container,
+.profile-text-first-p,
+.profile-text,
+.section-title {
   text-align: center;
+}
+
+/* TRANSITIONS */
+
+a,
+.button {
+  transition: all 300ms ease;
 }
 
 /* BUTTONS */
 
 .button {
   padding: 1rem;
-  font-weight: 600;
-  transition: all 300ms ease;
   width: 8rem;
 }
 
+.about-pic,
 .button,
+.contact-info-upper-container,
 .details-container,
-.contact-info-upper-container {
+.project-img {
   border-radius: 2rem;
 }
 
@@ -105,12 +178,14 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+.icon,
 .primary-button:hover,
 .secondary-button:hover {
   cursor: pointer;
 }
 
-.primary-button {
+.primary-button,
+.secondary-button:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -125,70 +200,50 @@ section {
 
 .secondary-button:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
-  background: rgb(53, 53, 53);
-  color: white;
 }
 
+#profile-socials-container,
 .profile-button-container {
-  justify-content: center;
-  display: flex;
   gap: 1rem;
 }
 
 /* PROFILE SECTION */
 
 #profile {
-  display: flex;
-  justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
 
 .profile-text {
   align-self: center;
-  text-align: center;
 }
 
-.profile-text p {
-  font-weight: 600;
-}
-
+.experience-sub-title,
 .profile-text-second-p {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
 .profile-pic-container {
-  display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
 
 #profile-socials-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
   margin-top: 1rem;
 }
 
 /* ABOUT SECTION */
 
-#about {
-  position: relative;
-}
-
-.about-containers {
-  display: flex;
+.about-containers,
+.experience-sub-title {
   margin-bottom: 2rem;
-  gap: 2rem;
 }
 
 .details-container {
   padding: 1.5rem;
-  text-align: center;
   flex: 1;
-  background: rgb(250, 250, 250);
 }
 
 .details-container,
@@ -200,17 +255,6 @@ section {
 
 .icon {
   height: 2rem;
-  cursor: pointer;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.about-details-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .arrow {
@@ -221,94 +265,48 @@ section {
 
 /* EXPERIENCE SECTIION */
 
-#experience {
-  position: relative;
-}
-
-.experience-details-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 80%;
-}
-
 .article-container {
   text-align: initial;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
   gap: 2.5rem;
 }
 
 article {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
   width: 10rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
-.experience-sub-title {
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-  color: rgb(85, 85, 85);
 }
 
 /* PROJECTS SECTION */
 
-#projects {
-  position: relative;
-}
-
 .project-img {
   width: 90%;
   height: 90%;
-  border-radius: 2rem;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
 }
 
 .color-container,
-.contact-info-upper-container {
+.contact-info-upper-container,
+.details-container {
   background: rgb(250, 250, 250);
-}
-
-.project-btn {
-  color: black;
-  background: white;
 }
 
 /* CONTACT SECTION */
 
 .contact-info-upper-container {
-  display: flex;
-  justify-content: center;
   margin: 2rem auto;
   padding: 0.5rem;
 }
 
-#contact,
-.contact-info-container {
-  display: flex;
-  justify-content: center;
-}
-
 #contact {
-  flex-direction: column;
   height: 70vh;
 }
 
-.contact-info-container {
-  align-items: center;
+.contact-info-container,
+article {
   gap: 0.5rem;
+}
+
+.contact-info-container,
+.project-title {
   margin: 1rem;
 }
 
@@ -316,14 +314,14 @@ article .icon {
   font-size: larger;
 }
 
-.contact-icon {
+article .icon,
+.contact-icon,
+.logo:hover {
   cursor: default;
 }
 
+/* FOOTER SECTION */
+
 footer {
   height: 26vh;
-}
-
-footer p {
-  text-align: center;
 }
