@@ -93,13 +93,15 @@ section {
 }
 
 .button,
-.details-container {
+.details-container,
+.contact-info-upper-container {
   border-radius: 2rem;
 }
 
 .primary-button,
 .secondary-button,
-.details-container {
+.details-container,
+.contact-info-upper-container {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
@@ -258,8 +260,8 @@ article .icon {
 }
 
 .project-img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   border-radius: 2rem;
 }
 
@@ -268,7 +270,8 @@ article .icon {
   color: black;
 }
 
-.color-container {
+.color-container,
+.contact-info-upper-container {
   background: rgb(250, 250, 250);
   border-color: rgb(163, 163, 163);
 }
@@ -281,6 +284,13 @@ article .icon {
 
 /* CONTACT SECTION */
 
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
 #contact,
 .contact-info-container {
   display: flex;
@@ -289,9 +299,27 @@ article .icon {
 
 #contact {
   flex-direction: column;
+  height: 70vh;
 }
 
 .contact-info-container {
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+footer {
+  height: 26vh;
+}
+
+footer p {
+  text-align: center;
 }
