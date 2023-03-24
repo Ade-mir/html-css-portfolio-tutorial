@@ -129,7 +129,7 @@ section {
   color: white;
 }
 
-#profile-button-container {
+.profile-button-container {
   justify-content: center;
   display: flex;
   gap: 1rem;
@@ -178,7 +178,7 @@ section {
   position: relative;
 }
 
-#about-containers {
+.about-containers {
   display: flex;
   margin-bottom: 2rem;
   gap: 2rem;
