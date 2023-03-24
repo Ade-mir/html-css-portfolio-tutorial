@@ -189,6 +189,12 @@ section {
   text-align: center;
   flex: 1;
   background: rgb(250, 250, 250);
+}
+
+.details-container,
+.color-container,
+.contact-info-upper-container,
+.project-btn {
   border-color: rgb(163, 163, 163);
 }
 
@@ -273,13 +279,11 @@ article .icon {
 .color-container,
 .contact-info-upper-container {
   background: rgb(250, 250, 250);
-  border-color: rgb(163, 163, 163);
 }
 
 .project-btn {
   color: black;
   background: white;
-  border-color: rgb(163, 163, 163);
 }
 
 /* CONTACT SECTION */
