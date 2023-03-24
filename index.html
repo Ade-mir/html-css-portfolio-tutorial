@@ -10,7 +10,7 @@
   <body>
     <nav>
       <div class="logo">John Doe</div>
-      <div class="nav-links-container">
+      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -20,28 +20,25 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="profile-pic-container">
-        <img src="./assets/profile-pic.png" alt="Profile Picture" />
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
       </div>
-      <div class="profile-text">
-        <p class="profile-text-first-p">Hello, I'm</p>
-        <h1 class="section-title">John Doe</h1>
-        <p class="profile-text-second-p">Frontend Developer</p>
-        <div class="profile-button-container">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
           <button
-            class="button secondary-button"
+            class="btn btn-color-2"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
           </button>
-          <button
-            class="button primary-button"
-            onclick="location.href='./#contact'"
-          >
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
-        <div id="profile-socials-container">
+        <div id="socials-container">
           <img
             src="/assets/linkedin.png"
             class="icon"
@@ -58,10 +55,10 @@
       </div>
     </section>
     <section id="about">
-      <p class="profile-text-first-p">Get To Know More</p>
-      <h1 class="section-title">About Me</h1>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="profile-pic-container">
+        <div class="section__pic-container">
           <img
             class="about-pic"
             src="./assets/about-pic.png"
@@ -112,8 +109,8 @@
       />
     </section>
     <section id="experience">
-      <p class="profile-text-first-p">Explore My</p>
-      <h1 class="section-title">Experience</h1>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -246,8 +243,8 @@
       />
     </section>
     <section id="projects">
-      <p class="profile-text-first-p">Browse My Recent</p>
-      <h1 class="section-title">Projects</h1>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -259,15 +256,15 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="profile-button-container">
+            <div class="btn-container">
               <button
-                class="button secondary-button project-btn"
+                class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/';"
               >
                 GitHub
               </button>
               <button
-                class="button secondary-button project-btn"
+                class="btn btn-color-2 project-btn"
                 onclick="location.href='https://linkedin.com/';"
               >
                 Live Demo
@@ -283,15 +280,15 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="profile-button-container">
+            <div class="btn-container">
               <button
-                class="button secondary-button project-btn"
+                class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/';"
               >
                 GitHub
               </button>
               <button
-                class="button secondary-button project-btn"
+                class="btn btn-color-2 project-btn"
                 onclick="location.href='https://linkedin.com/';"
               >
                 Live Demo
@@ -307,15 +304,15 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="profile-button-container">
+            <div class="btn-container">
               <button
-                class="button secondary-button project-btn"
+                class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/';"
               >
                 GitHub
               </button>
               <button
-                class="button secondary-button project-btn"
+                class="btn btn-color-2 project-btn"
                 onclick="location.href='https://linkedin.com/';"
               >
                 Live Demo
@@ -332,8 +329,8 @@
       />
     </section>
     <section id="contact">
-      <p class="profile-text-first-p">Get In Touch</p>
-      <h1 class="section-title">Contact Me</h1>
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -355,7 +352,6 @@
     </section>
     <footer>
       <nav>
-        <!-- <div class="logo">John Doe</div> -->
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>

@@ -26,7 +26,7 @@ article,
 nav,
 #contact,
 #profile,
-#profile-socials-container,
+#socials-container,
 .about-containers,
 .about-details-container,
 .article-container,
@@ -34,8 +34,8 @@ nav,
 .contact-info-container,
 .experience-details-container,
 .nav-links,
-.profile-button-container,
-.profile-pic-container,
+.btn-container,
+.section__pic-container,
 .section-container {
   display: flex;
 }
@@ -58,12 +58,12 @@ nav,
 
 #contact,
 #profile,
-#profile-socials-container,
+#socials-container,
 .about-details-container,
 .experience-details-container,
 .contact-info-upper-container,
 .contact-info-container,
-.profile-button-container {
+.btn-container {
   justify-content: center;
 }
 
@@ -130,80 +130,80 @@ section {
   height: 80%;
 }
 
-.section-title {
+.title {
   font-size: 3rem;
 }
 
-.button,
+.btn,
 .experience-sub-title,
-.profile-text p,
-.section-title {
+.section__text p,
+.title {
   font-weight: 600;
 }
 
 footer p,
 .details-container,
-.profile-text-first-p,
-.profile-text,
-.section-title {
+.section__text__p1,
+.section__text,
+.title {
   text-align: center;
 }
 
 /* TRANSITIONS */
 
 a,
-.button {
+.btn {
   transition: all 300ms ease;
 }
 
 /* BUTTONS */
 
-.button {
+.btn {
   padding: 1rem;
   width: 8rem;
 }
 
 .about-pic,
-.button,
+.btn,
 .contact-info-upper-container,
 .details-container,
 .project-img {
   border-radius: 2rem;
 }
 
-.primary-button,
-.secondary-button,
+.btn-color-1,
+.btn-color-2,
 .details-container,
 .contact-info-upper-container {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .icon,
-.primary-button:hover,
-.secondary-button:hover {
+.btn-color-1:hover,
+.btn-color-2:hover {
   cursor: pointer;
 }
 
-.primary-button,
-.secondary-button:hover {
+.btn-color-1,
+.btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
 
-.primary-button:hover {
+.btn-color-1:hover {
   background: rgb(0, 0, 0);
 }
 
-.secondary-button {
+.btn-color-2 {
   background: none;
 }
 
-.secondary-button:hover {
+.btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-#profile-socials-container,
-.profile-button-container {
+#socials-container,
+.btn-container {
   gap: 1rem;
 }
 
@@ -214,23 +214,23 @@ a,
   height: 80vh;
 }
 
-.profile-text {
+.section__text {
   align-self: center;
 }
 
 .experience-sub-title,
-.profile-text-second-p {
+.section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
-.profile-pic-container {
+.section__pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
 
-#profile-socials-container {
+#socials-container {
   margin-top: 1rem;
 }
 
