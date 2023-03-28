@@ -1,0 +1,21 @@
+@media screen and (max-width: 1200px) {
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  .section-container {
+    display: block;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    height: 33vw;
+  }
+  #projects {
+    display: none;
+  }
+}
