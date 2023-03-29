@@ -9,7 +9,7 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <nav>
+    <nav id="desktop-nav">
       <div class="logo">John Doe</div>
       <div>
         <ul class="nav-links">
@@ -18,6 +18,22 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" id="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links" id="menu-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
       </div>
     </nav>
     <section id="profile">
@@ -364,5 +380,6 @@
       </nav>
       <p>Copyright &#169; 2023 John Doe. All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
