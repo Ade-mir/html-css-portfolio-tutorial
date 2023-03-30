@@ -3,7 +3,7 @@
     flex-wrap: wrap;
   }
   #profile {
-    min-height: fit-content;
+    height: fit-content;
   }
 }
 
@@ -85,5 +85,8 @@
   }
   article {
     font-size: 1rem;
+  }
+  #profile {
+    height: 83vh;
   }
 }
