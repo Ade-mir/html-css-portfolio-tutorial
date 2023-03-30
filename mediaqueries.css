@@ -3,7 +3,7 @@
     flex-wrap: wrap;
   }
   #profile {
-    height: fit-content;
+    min-height: fit-content;
   }
 }
 
