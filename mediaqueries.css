@@ -1,7 +1,4 @@
 @media screen and (max-width: 1400px) {
-  #projects {
-    height: fit-content;
-  }
   .about-containers {
     flex-wrap: wrap;
   }
@@ -30,6 +27,10 @@
   }
   #hamburger-nav {
     display: flex;
+  }
+  .experience-details-container,
+  #experience {
+    margin-top: 2rem;
   }
 }
 
@@ -81,9 +82,5 @@
   }
   article {
     font-size: 1rem;
-  }
-  .experience-details-container,
-  #experience {
-    margin-top: 2rem;
   }
 }
