@@ -4,6 +4,7 @@
   }
   #profile {
     height: fit-content;
+    margin-bottom: 6rem;
   }
 }
 
@@ -88,5 +89,6 @@
   }
   #profile {
     height: 83vh;
+    margin-bottom: 0;
   }
 }
