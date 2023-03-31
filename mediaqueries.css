@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   #profile {
     height: fit-content;
-    /* height: calc(83vh); */
+    height: calc(83vh);
     margin-bottom: 6rem;
   }
   .about-containers {
